@@ -15,16 +15,17 @@ class Sprite {
         this.draw = ctx.fillRect(this.position.x,this.position.y,this.width,this.height)
     }
 }
-const easy_enemy = new Sprite(){
-    position{
-        x:0
+const easy_enemy = new Sprite({
+    position: {
+        x:0,
         y:0
+    },
+
+    velocity: {
+        x: 0,
+        y: 0
     }
-    velocity{
-        x:0
-        y:0
-    }
-}
+})
 
 function animate() {
     easy_enemy.draw()
