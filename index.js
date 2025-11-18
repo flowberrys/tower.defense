@@ -27,6 +27,18 @@ const easy_enemy = new Sprite({
     }
 })
 
+const medium_enemy = new Sprite({
+    position: {
+        x: 0,
+        y: 0
+    },
+
+    velocity: {
+        x: 0,
+        y:0
+    }
+})
+
 function animate() {
     easy_enemy.draw()
     requestAnimationFrame(animate)
