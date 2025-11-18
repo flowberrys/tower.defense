@@ -39,8 +39,20 @@ const medium_enemy = new Sprite({
     }
 })
 
+const hard_enemy = new Sprite({
+    position: {
+        x: 0,
+        y: 0 
+    },
+
+    velocity: {
+        x:0,
+        y:0
+    }
+})
+
 function animate() {
-    easy_enemy.draw()
+    draw()
     requestAnimationFrame(animate)
     ctx.fillSytle = 'black'
     ctx.fillRect(0,0,canvas.width,canvas.height)
