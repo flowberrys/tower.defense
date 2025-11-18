@@ -34,7 +34,7 @@ const medium_enemy = new Sprite({
     },
 
     velocity: {
-        x:5,
+        x:7,
         y:0
     }
 })
@@ -46,7 +46,7 @@ const hard_enemy = new Sprite({
     },
 
     velocity: {
-        x:5,
+        x:8,
         y:0
     }
 })
@@ -55,7 +55,7 @@ function animate() {
     draw()
     requestAnimationFrame(animate)
     ctx.fillSytle = 'black'
-    ctx.fillRect(0,0,canvas.width,canvas.height)
+    easy_enemy.fillRect((velocity.x + position.x),0,canvas.width,canvas.height)
 }
 
 animate();
