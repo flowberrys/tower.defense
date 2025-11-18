@@ -22,7 +22,7 @@ const easy_enemy = new Sprite({
     },
 
     velocity: {
-        x: 0,
+        x: 5,
         y: 0
     }
 })
@@ -34,7 +34,7 @@ const medium_enemy = new Sprite({
     },
 
     velocity: {
-        x: 0,
+        x:5,
         y:0
     }
 })
@@ -46,7 +46,7 @@ const hard_enemy = new Sprite({
     },
 
     velocity: {
-        x:0,
+        x:5,
         y:0
     }
 })
