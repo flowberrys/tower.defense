@@ -3,6 +3,7 @@
     <script src="home.js">
     </script>
     <style>
+    
         div.table {
             position: absolute;
             x: 0px;
@@ -20,6 +21,18 @@
             x: 100px;
             y: 273px;
         };
+
+        div.about_game_btn{
+            position: absolute;
+            x: 0px;
+            y: 200px;
+        };
+        
+        div.logo{
+            position: absolute;
+            x: 900px;
+            y: 0px;
+        }
     </style>
 <body>
     <head>
@@ -31,19 +44,37 @@
     <div id="title">
         tower defense 
     </div>
-
+    <!--startgame-->
     <div id="startgame_btn">
         <a href="index.html">
         <script>
+            canvas = canvas.getContext('2d')
             c.fillStyle = 'blue';
             c.fillRect(100,273,50,50);
         </script>
         <h1>Start game</h1>
         </a>
     </div>
-
+    <!--title-->
     <div id="title">
         <P>Welcome To Pirate Tower Defense</P>
+    </div>
+    <!--about game btn-->
+    <div id="about_game_btn">
+        <a href="txt">
+            <script>
+                const canvas = canvas.getContext('2d')
+                const c = canvas.getContext('2d')
+                
+                c.fillStyle = 'red';
+                c.fillRect(0,200,50,50)
+            </script>
+            <h2>About</h2>
+        </a>
+    </div>
+    <!--logo-->
+    <div id="logo">
+        <a href="pics/cao-game-development-high-resolution-logo-grayscale-tansparent.png"></a>
     </div>
 </body>
 <div id="table">
