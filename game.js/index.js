@@ -15,11 +15,11 @@ class Sprite {
         this.draw = c.fillRect(this.position.x,this.position.y,this.width,this.height)
         this.health = this.health
         this.attack = this.attack
+        this.color = this.color
 
     }
     
 }
-
 const easy_enemy = new Sprite({
     position: {
         x:0,
@@ -31,7 +31,9 @@ const easy_enemy = new Sprite({
     },
     health: 25,
 
-    attack: 0
+    attack: 0,
+
+    
     
 })
 const medium_enemy = new Sprite({
