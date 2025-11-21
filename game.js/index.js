@@ -61,7 +61,7 @@ const hard_enemy = new Sprite({
     },
     health: 100,
 
-    attack
+    attack: 0 
     
 })
 
