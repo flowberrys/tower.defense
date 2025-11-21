@@ -32,6 +32,12 @@
             position: absolute;
             x: 900px;
             y: 0px;
+        };
+        div.settings{
+            position: absolute;
+            x: 1024px;
+            y: 0px;
+    
         }
     </style>
 <body>
@@ -81,6 +87,18 @@
         <button>
         <img src="pics/cao-game-development-high-resolution-logo-grayscale-tansparent.png"></img>
     </button>
+    </div>
+    <!--settings-->
+    <div id="settings">
+        <button>
+            <a href=""></a><script>
+                const button = document.querySelector('canvas')
+                const ctx = canvas.getContext('2d')
+
+                ctx.fillStyle ='blue'
+                ctx.fillRect(1024,0,50,50);
+            </script>
+        </button>
     </div>
 </body>
 <div id="table">
