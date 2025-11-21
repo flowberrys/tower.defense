@@ -12,7 +12,7 @@ class Sprite {
         this.velocity = velocity
         this.width = 50;
         this.height = 50;
-        this.draw()
+        this.draw = c.fillRect(this.position.x,this.position.y,this.width,this.height)
         this.health = this.health
         this.attack = this.attack
 
