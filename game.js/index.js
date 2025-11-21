@@ -12,10 +12,11 @@ class Sprite {
         this.velocity = velocity
         this.width = 50;
         this.height = 50;
-        this.draw = c.fillRect(this.position.x,this.position.y,this.width,this.height)
-        this.health = this.health
-        this.attack = this.attack
-        this.color = this.color
+        this.color = c.fillStyle(this.color);
+        this.draw = c.fillRect(this.position.x,this.position.y,this.width,this.height);
+        this.health = this.health;
+        this.attack = this.attack;
+        
 
     }
     
@@ -33,6 +34,8 @@ const easy_enemy = new Sprite({
 
     attack: 0,
 
+    color: 'green'
+
     
     
 })
@@ -47,7 +50,9 @@ const medium_enemy = new Sprite({
     },
     health: 50,
 
-    attack: 0
+    attack: 0,
+
+    color: 'yellow'
     
 })
 const hard_enemy = new Sprite({
@@ -61,7 +66,9 @@ const hard_enemy = new Sprite({
     },
     health: 100,
 
-    attack: 0 
+    attack: 0,
+
+    color: 'red'
     
 })
 
